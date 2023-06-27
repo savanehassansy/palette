@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/palette.png" title="Favicon" sizes="16x24" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-sky-100">
+    <ul class="ctn flex flex-wrap justify-center m-5 py-48"></ul>
+    <div class=" bg-white text-gray-500 text-[50px] p-2 rounded-lg text-center w-[540px] h-40 fixed bottom-[700px] left-[66%]">
+        <p>Heure GMT</p>
+         <p class="display   text-[50px]"></p>
+    </div>
+    <button
+      class="btn text-white cursor-pointer rounded-md text-[1.1rem] font-medium p-2 fixed bottom-10 left-[47%] transition ease-in-out delay-150 bg-sky-500 hover:-translate-y-2 hover:-translate-x-2 hover:scale-110 hover:bg-indigo-500 duration-300"
+    >
+      Refresh palette
+    </button>
+  </body>
+</html>
