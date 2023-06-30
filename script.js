@@ -1,7 +1,13 @@
 const container = document.querySelector(".ctn");
 const refreshBtn = document.querySelector(".btn");
+const saveBtn = document.querySelector(".saveNum");
 
-const maxPaletteBoxes = 64;
+let maxPaletteBoxes;
+
+function getNum() {
+  maxPaletteBoxes = document.querySelector(".num").value;
+}
+getNum();
 
 const generatePAlette = () => {
   container.innerHTML = "";
@@ -23,6 +29,9 @@ const generatePAlette = () => {
 };
 generatePAlette();
 
+refreshBtn.addEventListener("click", getNum);
+refreshBtn.addEventListener("click", generatePAlette);
+
 const copyColor = (elem, hexVal) => {
   const colorElement = elem.querySelector(".hex");
   navigator.clipboard.writeText(hexVal).then(() => {
@@ -30,7 +39,7 @@ const copyColor = (elem, hexVal) => {
     setTimeout(() => (colorElement.innerHTML = hexVal), 1000);
   });
 };
-refreshBtn.addEventListener("click", generatePAlette);
+
 setInterval(function () {
   const clock = document.querySelector(".display");
   let time = new Date();
