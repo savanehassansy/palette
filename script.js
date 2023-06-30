@@ -1,14 +1,17 @@
 const container = document.querySelector(".ctn");
 const refreshBtn = document.querySelector(".btn");
-const saveBtn = document.querySelector(".saveNum");
 
+//variables pour le nbre de palettes a afficher
 let maxPaletteBoxes;
 
+//fonction pour récupérer le nbre entré par l'utilisateur
 function getNum() {
   maxPaletteBoxes = document.querySelector(".num").value;
 }
+
 getNum();
 
+//fonction pour générer les palettes
 const generatePAlette = () => {
   container.innerHTML = "";
   for (let i = 0; i < maxPaletteBoxes; i++) {
@@ -27,11 +30,14 @@ const generatePAlette = () => {
     container.appendChild(color);
   }
 };
+
 generatePAlette();
 
+//fonction appeler au click
 refreshBtn.addEventListener("click", getNum);
 refreshBtn.addEventListener("click", generatePAlette);
 
+//fonction pour copié la couleur
 const copyColor = (elem, hexVal) => {
   const colorElement = elem.querySelector(".hex");
   navigator.clipboard.writeText(hexVal).then(() => {
@@ -40,6 +46,7 @@ const copyColor = (elem, hexVal) => {
   });
 };
 
+//fonction pour afficher l'horloge
 setInterval(function () {
   const clock = document.querySelector(".display");
   let time = new Date();

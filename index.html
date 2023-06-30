@@ -13,23 +13,20 @@
     <script src="script.js" defer></script>
   </head>
   <body class="bg-sky-100">
-    <div class="flex ml-[62px] top-0 fixed ">
-      <div
-        class="flex m-10 rounded-lg  bg-white p-8 w-[500px] h-40"
-      >
+    <div class="flex ml-[62px] top-0 fixed">
+      <div class="flex m-10 rounded-lg bg-white p-8 w-[500px] h-40">
+        <img
+          class="animate-bounce w-20 h-20 mr-8 mt-3"
+          src="img/palette.png"
+          alt=""
+        />
         <p>
           Vous avez ici toutes les palettes de couleur a votre disposition vous
           avez justes à les copier et le tour est joué
         </p>
-        <img
-          class="animate-bounce w-20 h-20 ml-8"
-          src="img/palette.png"
-          alt=""
-        />
       </div>
-      <div
-        class="m-10 rounded-lg bg-white p-8 w-[500px] h-40"
-      >
+      <div class="flex m-10 rounded-lg bg-white p-8 w-[500px] h-40">
+        <img class="animate-bounce w-20 h-20 mr-8 mt-4" src="img/write.png" alt="" />
         <label class="block text-center">
           <span class="block mb-5"
             >Définissez le nombre de palette à afficher et rafraîchisser</span
@@ -42,15 +39,17 @@
           />
         </label>
       </div>
-        <div
-      class="m-10 bg-white text-gray-500 text-[50px] p-2 rounded-lg text-center w-[540px] h-40  "
-    >
-      <p>Heure GMT</p>
-      <p class="display text-[50px]"></p>
-    </div>
+      <div
+        class="flex m-10 bg-white text-gray-500 text-[50px] p-2 rounded-lg text-center w-[540px] h-40"
+      >
+        <img class="animate-bounce w-20 h-20 mr-14 mt-10 ml-4" src="img/clock.png" alt="" />
+        <div>
+          <p>Heure GMT</p>
+          <p class="display text-[50px]"></p>
+        </div>
+      </div>
     </div>
 
-  
     <ul class="ctn flex flex-wrap justify-center m-5 py-48"></ul>
 
     <button
