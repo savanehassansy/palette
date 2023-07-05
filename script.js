@@ -39,10 +39,15 @@ refreshBtn.addEventListener("click", generatePAlette);
 
 //fonction pour copié la couleur
 const copyColor = (elem, hexVal) => {
-  const colorElement = elem.querySelector(".hex");
+  elem.querySelector(".hex");
   navigator.clipboard.writeText(hexVal).then(() => {
-    colorElement.innerText = "Copié";
-    setTimeout(() => (colorElement.innerHTML = hexVal), 1000);
+    Swal.fire({
+      width:300,
+      icon: "success",
+      title: "Couleur copié",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   });
 };
 
@@ -55,3 +60,6 @@ setInterval(function () {
   let hr = time.getHours();
   clock.textContent = hr + ":" + min + ":" + sec;
 });
+
+
+

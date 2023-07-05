@@ -2,60 +2,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
     <link
       rel="shortcut icon"
       href="img/palette.png"
       title="Favicon"
       sizes="16x24"
     />
+    <link rel="stylesheet" href="style.css">
+    <title>accueil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
   </head>
-  <body class="bg-sky-100">
-    <div class="flex ml-[62px] top-0 fixed">
-      <div class="flex m-10 rounded-lg bg-white p-8 w-[500px] h-40">
-        <img
-          class="animate-bounce w-20 h-20 mr-8 mt-3"
-          src="img/palette.png"
-          alt=""
-        />
-        <p>
-          Vous avez ici toutes les palettes de couleur a votre disposition vous
-          avez justes à les copier et le tour est joué
+  <body class="bg-sky-100 items-center pb-32">
+    <div class="flex m-20">
+      <div class="w-[60%]">
+        <h1 class="mb-9 text-[68px] font-bold italic">
+          BIENVENUE SUR <span class="text-sky-500">COLORAFRICA</span>
+        </h1>
+        <h3 class="mb-5 text-[35px] font-bold ">QUI SOMME NOUS ?</h3>
+        <p class="text-lg mb-9">
+          <span class="text-sky-500 font-bold italic text-2xl"
+            >Colorafrica
+          </span>
+          est un site web de palette de couleurs ! Nous sommes là pour vous
+          aider à trouver l'inspiration et à donner vie à vos projets créatifs.
+          Que vous soyez un designer professionnel, un artiste ou simplement
+          quelqu'un qui aime explorer les différentes nuances, notre site
+          propose une vaste collection de palettes de couleurs pour répondre à
+          tous vos besoins.
         </p>
+        <h3 class="mb-5 text-[35px] font-bold">POURQUOI NOUS UTILISER ?</h3>
+        <p class="mb-9 text-lg ">
+          Nous mettons à votre disposition des teintes douces et apaisantes pour
+          créer une atmosphère relaxante ou des couleurs vives et éclatantes
+          pour ajouter de l'énergie à votre design. Que vous conceviez un site
+          web, une application mobile, un logo, un flyer ou tout autre projet
+          visuel, notre site web de palette de couleurs vous accompagne dans
+          votre démarche créative. Trouvez l'inspiration, explorez les
+          possibilités infinies de combinaisons de couleurs et créez des designs
+          qui captivent et émerveillent. Nous avons ce qu'il vous faut.
+        </p>
+        <h5 class="italic ">
+          Prêt à explorer le monde des couleurs ? Parcourez notre collection dès
+          maintenant et laissez votre créativité s'épanouir !
+        </h5>
       </div>
-      <div class="flex m-10 rounded-lg bg-white p-8 w-[500px] h-40">
-        <img class="animate-bounce w-20 h-20 mr-8 mt-4" src="img/write.png" alt="" />
-        <label class="block text-center">
-          <span class="block mb-5"
-            >Définissez le nombre de palette à afficher et rafraîchisser</span
-          >
 
-          <input
-            type="number"
-            value="10"
-            class="num text-center mr-9 w-24 p-3 rounded-md bg-white border shadow-sm border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500"
-          />
-        </label>
-      </div>
-      <div
-        class="flex m-10 bg-white text-gray-500 text-[50px] p-2 rounded-lg text-center w-[540px] h-40"
-      >
-        <img class="animate-bounce w-20 h-20 mr-14 mt-10 ml-4" src="img/clock.png" alt="" />
-        <div>
-          <p>Heure GMT</p>
-          <p class="display text-[50px]"></p>
-        </div>
+      <div class="ml-44 mt-14">
+        <img class="" src="img/design.png" alt="" />
       </div>
     </div>
-
-    <ul class="ctn flex flex-wrap justify-center m-5 py-48"></ul>
-
     <button
-      class="btn text-white cursor-pointer rounded-md text-[1.1rem] font-medium p-2 fixed bottom-10 left-[47%] transition ease-in-out delay-150 bg-sky-500 hover:-translate-y-2 hover:-translate-x-2 hover:scale-110 hover:bg-indigo-500 duration-300"
+      class="ml-[45%] text-white cursor-pointer rounded-md text-[1.1rem] font-medium p-2 bg-sky-500"
     >
-      Refresh palette
+      <a href="palette.html">Commencer</a>
     </button>
+ 
   </body>
 </html>
