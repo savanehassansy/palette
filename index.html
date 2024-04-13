@@ -9,19 +9,49 @@
       title="Favicon"
       sizes="16x24"
     />
-    <link rel="stylesheet" href="style.css">
-    <title>accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Colorafrica</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
     <script src="script.js" defer></script>
   </head>
-  <body class="bg-sky-100 items-center pb-32">
-    <div class="flex m-20">
+  <body class="">
+    <div class="flex p-20 bg-sky-100">
       <div class="w-[60%]">
         <h1 class="mb-9 text-[68px] font-bold italic">
           BIENVENUE SUR <span class="text-sky-500">COLORAFRICA</span>
         </h1>
-        <h3 class="mb-5 text-[35px] font-bold ">QUI SOMME NOUS ?</h3>
-        <p class="text-lg mb-9">
+        <div class="relative font-light text-2xl">
+          <span class="relative text-sky-500 font-bold">Colorafrica</span>
+          <span
+            class="sec-text relative text before:border-l-[3px] before:border-indigo-950 before:bg-sky-100 before:w-[100%] before:h-[100%] before:absolute before:top-0 before:left-0 before:content"
+          ></span>
+        </div>
+      </div>
+
+      <div class="ml-44 mt-7">
+        <lottie-player
+          autoplay
+          loop
+          mode="normal"
+          src="https://app.lottiefiles.com/animation/72ee3d7a-ac99-4814-9c9f-cd3637dfe647"
+          style="width: 520px"
+        >
+        </lottie-player>
+        <lottie-player
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/b5589acc-9372-45cf-acfb-e85aeb3494f0/xSffewDbC5.json"
+          style="width: 520px"
+        >
+        </lottie-player>
+      </div>
+    </div>
+    <div class="flex p-20 mb-10">
+      <div class="w-[50%] mt-20 mr-[200px]">
+        <h3 class="mb-5 text-[35px] font-bold">QUI SOMME NOUS ?</h3>
+        <p class="text-lg">
           <span class="text-sky-500 font-bold italic text-2xl"
             >Colorafrica
           </span>
@@ -32,8 +62,20 @@
           propose une vaste collection de palettes de couleurs pour répondre à
           tous vos besoins.
         </p>
+      </div>
+      <div>
+        <lottie-player
+          src="https://assets7.lottiefiles.com/datafiles/oRNAjQ9i3pvunqL4F3RKjrIfoxQtWGkyTrwqNaqD/Geometry.json"
+          autoplay
+          loop
+          style="width: 500px; height: 500px"
+        ></lottie-player>
+      </div>
+    </div>
+    <div class="flex p-20 bg-red-300 mb-10">
+      <div class="w-[50%] mt-20 mr-[200px]">
         <h3 class="mb-5 text-[35px] font-bold">POURQUOI NOUS UTILISER ?</h3>
-        <p class="mb-9 text-lg ">
+        <p class="text-lg">
           Nous mettons à votre disposition des teintes douces et apaisantes pour
           créer une atmosphère relaxante ou des couleurs vives et éclatantes
           pour ajouter de l'énergie à votre design. Que vous conceviez un site
@@ -43,21 +85,24 @@
           possibilités infinies de combinaisons de couleurs et créez des designs
           qui captivent et émerveillent. Nous avons ce qu'il vous faut.
         </p>
-        <h5 class="italic ">
-          Prêt à explorer le monde des couleurs ? Parcourez notre collection dès
-          maintenant et laissez votre créativité s'épanouir !
-        </h5>
       </div>
-
-      <div class="ml-44 mt-14">
-        <img class="" src="img/design.png" alt="" />
+      <div>
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_tHEtXH.json"
+          autoplay
+          loop
+          style="width: 500px; height: 500px"
+        ></lottie-player>
       </div>
     </div>
-    <button
+    <div class="mb-9">
+        <button
       class="ml-[45%] text-white cursor-pointer rounded-md text-[1.1rem] font-medium p-2 bg-sky-500"
     >
       <a href="palette.html">Commencer</a>
     </button>
-    <img class="animate-spin" src="img/waiting.png" id="loader" alt="">
+    </div>
+  
   </body>
 </html>
+<!-- <script src=“https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script><lottie-player src=“” background=“#FFFFFF” speed=“1” style=“width: 300px; height: 300px” loop controls autoplay direction=“1” mode=“normal”></lottie-player> -->

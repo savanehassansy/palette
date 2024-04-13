@@ -1,11 +1,21 @@
 const container = document.querySelector(".ctn");
 const refreshBtn = document.querySelector(".btn");
 const loader = document.querySelector("loader");
+const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "vous propose un choix de palette infini";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "vous donne la possibilté de faire un clic pour copié la couleur de votre ";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "vous permet de changer vos couleurs aléatoirement en cliquant sur votre bouton";
+            }, 8000); //1s = 1000 milliseconds
+        }
+        textLoad(); 
+        // setInterval(textLoad, 12000);
 
-
-window.addEventListener('load',() => {
-  loader.classList.add
-})
 
 //variables pour le nbre de palettes a afficher
 let maxPaletteBoxes;
@@ -74,3 +84,4 @@ setInterval(function () {
   let hr = time.getHours();
   clock.textContent = hr + ":" + min + ":" + sec;
 });
+
